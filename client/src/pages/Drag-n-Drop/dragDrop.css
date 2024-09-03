@@ -19,14 +19,27 @@
   padding: 15px;
 }
 
-.drag-component {
+.drag-component-area {
   width: 100%;
   height: 100%;
-  border: 1px solid black;
+  border: 5px solid black;
   overflow-y: scroll;
+  background-color: rgb(205, 202, 243);
 }
 
-.drag-component::-webkit-scrollbar {
+.drag-component {
+  margin: 5px;
+  padding-left: 10px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(13, 108, 13);
+  justify-content: flex-start;
+  color: white;
+}
+
+.drag-component-area::-webkit-scrollbar {
   display: none;
 }
 
@@ -52,5 +65,5 @@
 }
 
 .drag-section::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
