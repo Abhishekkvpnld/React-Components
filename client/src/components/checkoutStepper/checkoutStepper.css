@@ -1,54 +1,74 @@
-.stepper{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 20px;
+.stepper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.step{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
+.step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 
-.step-number{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(182, 185, 189);
+.step-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(182, 185, 189);
 }
 
-.btn{
-    width: 100px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: rgb(6, 151, 6);
-    color: white;
-    border: none;
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: rgb(6, 151, 6);
+  color: white;
+  border: none;
 }
 
-.btn:hover{
-    background-color: green;
-    cursor: pointer;
+.btn:hover {
+  background-color: green;
+  cursor: pointer;
 }
 
-.complete .step-number{
+.complete .step-number {
+  background-color: rgb(11, 178, 11);
+  color: white;
+}
+
+.active .step-number {
+  background-color: rgb(17, 27, 232);
+  color: white;
+}
+
+/* .finish .step-number{
     background-color: rgb(11, 178, 11);
     color: white;
+} */
+
+.finish {
+  display: none;
 }
 
-.active .step-number{
-    background-color: rgb(17, 27, 232);
-    color: white;
+.progress-bar {
+  position: absolute;
+  height: 4px;
+  top: 25%;
+  left: 0;
+  right: 0;
+  background-color: #ccc;
+  z-index: -1;
 }
 
-
-.finish{
-    display: none;
-}
+.progress {
+    height: 100%;
+    background-color: green;
+    transition: width 0.6s ease;
+  }
