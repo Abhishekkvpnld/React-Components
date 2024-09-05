@@ -1,0 +1,25 @@
+.stepper{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.step{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.step-number{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(182, 185, 189);
+}

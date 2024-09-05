@@ -1,20 +1,26 @@
 .dragContainer {
   width: 100%;
-  height: 200vh;
+  height: 100vh;
   background-color: rgb(248, 239, 227);
   padding: 50px 50px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
 }
 
 .dragContainer h1 {
   margin-bottom: 10px;
   font-weight: bold;
   color: rgb(34, 34, 36);
+
 }
 
 .drag-component-section {
   background-color: white;
-  width: 100%;
+  width: 50%;
   height: 250px;
   padding: 15px;
 }
@@ -22,9 +28,9 @@
 .drag-component-area {
   width: 100%;
   height: 100%;
-  border: 5px solid black;
+  border: 2px solid black;
   overflow-y: scroll;
-  background-color: rgb(205, 202, 243);
+  background-color: rgb(243, 243, 245);
 }
 
 .drag-component {
@@ -34,9 +40,9 @@
   height: 40px;
   display: flex;
   align-items: center;
-  background-color: rgb(13, 108, 13);
+  background-color: rgb(175, 232, 175);
   justify-content: flex-start;
-  color: white;
+  color: rgb(23, 22, 22);
 }
 
 .drag-component-area::-webkit-scrollbar {
@@ -59,7 +65,7 @@
   flex: 1;
   padding: 5px;
   text-align: center;
-  border: 2px dashed grey;
+  border: 1px dashed grey;
   height: 100%;
   overflow-y: scroll;
 }
