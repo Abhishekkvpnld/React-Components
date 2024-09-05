@@ -7,19 +7,19 @@ const stepper = () => {
   const checkout_steps = [
     {
       name:"Customer Info",
-      component : ()=><div>Provide Your Contact Details</div>
+      component : ()=><div style={{fontSize:"25px",fontWeight:"600",color:"grey"}}>Provide Your Contact Details</div>
     },
     {
       name:"Shipping Info",
-      component : ()=><div>Enter Your Shipping Address</div>
+      component : ()=><div style={{fontSize:"25px",fontWeight:"600",color:"grey"}}>Enter Your Shipping Address</div>
     },
     {
       name:"Payment",
-      component : ()=><div>Complete Your Payment</div>
+      component : ()=><div style={{fontSize:"25px",fontWeight:"600",color:"grey"}}>Complete Your Payment</div>
     },
     {
       name:"Delivered",
-      component : ()=><div>Your Order Has Been Delivered</div>
+      component : ()=><div style={{fontSize:"25px",fontWeight:"600",color:"grey"}}>Your Order Has Been Delivered</div>
     }
   ]
 

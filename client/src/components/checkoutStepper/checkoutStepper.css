@@ -23,3 +23,32 @@
     justify-content: center;
     background-color: rgb(182, 185, 189);
 }
+
+.btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(6, 151, 6);
+    color: white;
+    border: none;
+}
+
+.btn:hover{
+    background-color: green;
+    cursor: pointer;
+}
+
+.complete .step-number{
+    background-color: rgb(11, 178, 11);
+    color: white;
+}
+
+.active .step-number{
+    background-color: rgb(17, 27, 232);
+    color: white;
+}
+
+
+.finish{
+    display: none;
+}
