@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import "./checkoutStepper/checkoutStepper.css";
+import "./checkoutStepper.css";
 
 const CheckoutStepper = ({ stepsConfig = [] }) => {
 
     const [currentStep, setCurrentStep] = useState(1);
     const [isCompleted, setIsCompleted] = useState(false);
+
     const stepRef = useRef([]);
     const [margin, setMargins] = useState({
         marginLeft: 0,
@@ -87,7 +88,7 @@ const CheckoutStepper = ({ stepsConfig = [] }) => {
 
                 {!isCompleted && (
                     <button
-                        className={`btn ${currentStep === stepsConfig.length ? "finish" : ""}`}
+                        className={`btn`}
                         onClick={handleNext}
                     >
                         {currentStep === stepsConfig.length ? "Finish" : "Next"}
