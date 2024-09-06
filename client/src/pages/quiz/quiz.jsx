@@ -46,7 +46,7 @@ const Quiz = () => {
                                 {
                                     questions?.map((item, index) => (
                                         <li key={index}>
-                                            {item.Question}  <span className={userAnswer[index] ? "Correct" : "Incorrect"}>{userAnswer[index] ? "Correct" : "Incorrect"}</span>
+                                            <span className="number">{index+1}</span>{ item.Question}  <span className={userAnswer[index] ? "Correct" : "Incorrect"}>{userAnswer[index] ? "Correct" : "Incorrect"}</span>
                                         </li>
                                     ))
                                 }
