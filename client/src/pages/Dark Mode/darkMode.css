@@ -1,6 +1,6 @@
 .darkMode {
   width: 100%;
-  height: 100vh;
+  height: 150vh;
   display: flex;
   align-items: center;
   justify-items: center;
@@ -9,8 +9,7 @@
 }
 
 .darkmode_div {
-  margin-top: 50px;
-  background-color: aqua;
+  margin-top: 50px;  background-color: aqua;
   /* height: 80vh; */
   width: 70%;
   display: flex;

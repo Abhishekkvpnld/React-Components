@@ -6,6 +6,7 @@ import Stepper from './pages/stepper/Stepper.jsx';
 import Quiz from './pages/quiz/quiz.jsx';
 import Home from './pages/Home List/Home.jsx';
 import DarkMode from './pages/Dark Mode/DarkMode.jsx';
+import Pagination from './pages/Pagination/Pagination.jsx';
 
 function App() {
 
@@ -14,11 +15,12 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/stepper' element={<Stepper/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/stepper' element={<Stepper />} />
           <Route path='/dragNdrop' element={<DragAndDrop />} />
-          <Route path='/quiz' element={<Quiz/>}/>
-          <Route path='/darkMode' element={<DarkMode/>}/>
+          <Route path='/quiz' element={<Quiz />} />
+          <Route path='/darkMode' element={<DarkMode />} />
+          <Route path='/pagination' element={<Pagination />} />
         </Routes>
       </Router>
     </>
