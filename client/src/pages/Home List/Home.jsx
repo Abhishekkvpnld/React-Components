@@ -1,5 +1,6 @@
-import {useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import "./home.css"
+import { data } from "../../utils/data"
 
 const Home = () => {
     const navigate = useNavigate()
@@ -7,9 +8,11 @@ const Home = () => {
         <div className='home'>
             <h1>Components</h1>
             <ul>
-                <li onClick={()=>navigate("/dragNdrop")}>Drag N Drop</li>
-                <li onClick={()=>navigate("/stepper")}>Stepper</li>
-                <li onClick={()=>navigate("/quiz")}>Progressbar</li>
+                {
+                    data?.map((item, index) => (
+                        <li key={index} onClick={() => navigate(item?.site)}>{item?.title}</li>
+                    ))
+                }
             </ul>
         </div>
     )
