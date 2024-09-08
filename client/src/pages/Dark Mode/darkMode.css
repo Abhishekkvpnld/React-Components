@@ -11,7 +11,7 @@
 .darkmode_div {
   margin-top: 50px;
   background-color: aqua;
-  height: 80vh;
+  /* height: 80vh; */
   width: 70%;
   display: flex;
   align-items: center;
@@ -22,34 +22,37 @@
   border-radius: 8px;
   gap: 10px;
 }
-
 .title_div {
-  width: 95%;
-  background-color: aquamarine;
-  padding: 8px;
-  text-align: center;
-  border: none;
-  border-radius: 8px;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
-}
-
-.title_div span {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover {
+    width: 95%;
+    background-color: rgb(10, 83, 59);
+    padding: 8px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    animation: transform 2s ease;
+  }
+  
+  .title_div span {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed rgb(198, 219, 200);
+  }
+  
+  .title_div span:hover {
     cursor: pointer;
     background-color: rgb(222, 225, 228);
+    transform: scale(1.1);
   }
-}
 
 .content {
     display: flex;
