@@ -9,6 +9,7 @@ import DarkMode from './pages/Dark Mode/DarkMode.jsx';
 import Pagination from './pages/Pagination/Pagination.jsx';
 import Poll from './pages/Poll/Poll.jsx';
 import ProgressBar from './pages/ProgressBar/ProgressBar.jsx';
+import Grid from './pages/Grid Page/Grid.jsx';
 
 function App() {
 
@@ -23,8 +24,9 @@ function App() {
           <Route path='/quiz' element={<Quiz />} />
           <Route path='/darkMode' element={<DarkMode />} />
           <Route path='/pagination' element={<Pagination />} />
-          <Route path='/poll' element={<Poll/>}/>
-          <Route path='/progressBar' element={<ProgressBar/>} />
+          <Route path='/poll' element={<Poll />} />
+          <Route path='/progressBar' element={<ProgressBar />} />
+          <Route path='/grid' element={<Grid/>} />
         </Routes>
       </Router>
     </>

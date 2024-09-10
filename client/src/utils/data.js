@@ -27,4 +27,8 @@ export const data = [
     title: "Progress Bar",
     site: "/progressBar",
   },
+  {
+    title: "Grid Click",
+    site: "/grid",
+  },
 ];
