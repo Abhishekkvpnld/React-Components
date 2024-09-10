@@ -19,4 +19,12 @@ export const data = [
     title: "Pagination",
     site: "/pagination",
   },
+  {
+    title: "Poll Widget",
+    site: "/poll",
+  },
+  {
+    title: "Progress Bar",
+    site: "/progressBar",
+  },
 ];
