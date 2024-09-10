@@ -5,3 +5,7 @@
   border-radius: 8px;
   background-color: aliceblue;
 }
+
+.active-cell{
+background-color: rgb(20, 178, 20);
+}
