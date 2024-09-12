@@ -35,4 +35,8 @@ export const data = [
     title: "Tic Tac Toe",
     site: "/tic-tac-toe",
   },
+  {
+    title: "Currency Converter",
+    site: "/currency-converter",
+  },
 ];

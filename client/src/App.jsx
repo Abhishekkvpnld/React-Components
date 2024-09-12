@@ -11,6 +11,7 @@ import Poll from './pages/Poll/Poll.jsx';
 import ProgressBar from './pages/ProgressBar/ProgressBar.jsx';
 import Grid from './pages/Grid Page/Grid.jsx';
 import TicTakToe from './pages/TicTacToe/TicTakToe.jsx';
+import CurrencyConverter from './pages/Currency Converter/CurrencyConverter.jsx';
 
 function App() {
 
@@ -27,8 +28,9 @@ function App() {
           <Route path='/pagination' element={<Pagination />} />
           <Route path='/poll' element={<Poll />} />
           <Route path='/progressBar' element={<ProgressBar />} />
-          <Route path='/grid' element={<Grid/>} />
-          <Route path='/tic-tac-toe' element={<TicTakToe/>}/>
+          <Route path='/grid' element={<Grid />} />
+          <Route path='/tic-tac-toe' element={<TicTakToe />} />
+          <Route path='/currency-converter' element={<CurrencyConverter />} />
         </Routes>
       </Router>
     </>
