@@ -31,4 +31,8 @@ export const data = [
     title: "Grid Click",
     site: "/grid",
   },
+  {
+    title: "Tic Tac Toe",
+    site: "/tic-tac-toe",
+  },
 ];

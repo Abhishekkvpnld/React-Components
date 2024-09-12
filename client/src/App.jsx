@@ -10,6 +10,7 @@ import Pagination from './pages/Pagination/Pagination.jsx';
 import Poll from './pages/Poll/Poll.jsx';
 import ProgressBar from './pages/ProgressBar/ProgressBar.jsx';
 import Grid from './pages/Grid Page/Grid.jsx';
+import TicTakToe from './pages/TicTacToe/TicTakToe.jsx';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path='/poll' element={<Poll />} />
           <Route path='/progressBar' element={<ProgressBar />} />
           <Route path='/grid' element={<Grid/>} />
+          <Route path='/tic-tac-toe' element={<TicTakToe/>}/>
         </Routes>
       </Router>
     </>
