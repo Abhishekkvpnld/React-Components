@@ -12,6 +12,7 @@ import ProgressBar from './pages/ProgressBar/ProgressBar.jsx';
 import Grid from './pages/Grid Page/Grid.jsx';
 import TicTakToe from './pages/TicTacToe/TicTakToe.jsx';
 import CurrencyConverter from './pages/Currency Converter/CurrencyConverter.jsx';
+import SelectableGrid from './pages/Selectable Grid/SelectableGrid.jsx';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/grid' element={<Grid />} />
           <Route path='/tic-tac-toe' element={<TicTakToe />} />
           <Route path='/currency-converter' element={<CurrencyConverter />} />
+          <Route path='/selectable-grid' element={<SelectableGrid />} />
         </Routes>
       </Router>
     </>

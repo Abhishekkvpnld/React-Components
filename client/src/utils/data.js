@@ -39,4 +39,8 @@ export const data = [
     title: "Currency Converter",
     site: "/currency-converter",
   },
+  {
+    title: "Selectable Grid",
+    site: "/selectable-grid",
+  },
 ];
