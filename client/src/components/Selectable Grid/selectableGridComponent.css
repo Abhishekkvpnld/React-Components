@@ -1,0 +1,15 @@
+.grid-component {
+  display: grid;
+  grid-template-columns: repeat(var(--cols, 10), 35px);
+  grid-template-columns: repeat(var(--rows, 10), 35px);
+  gap: 5px;
+}
+
+.grid-box {
+  width: 35px;
+  height: 35px;
+  border: 2px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
