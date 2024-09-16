@@ -51,7 +51,7 @@ const SelectableGridComponent = ({ rows = 10, column = 10 }) => {
         >
             {[...Array(rows * column).keys()].map((_, i) => (
                 <div
-                    className={`grid-box `}
+                    className={`grid-box ${selectedBoxes.includes(i + 1) ? "selected" : ""}`}
                     key={i}
                     onMouseDown={() => handleMouseDown(i + 1)}
                     onMouseEnter={() => handleMouseEnter(i + 1)}
