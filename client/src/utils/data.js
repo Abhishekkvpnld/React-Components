@@ -43,4 +43,8 @@ export const data = [
     title: "Selectable Grid",
     site: "/selectable-grid",
   },
+  {
+    title: "Countdown Timer",
+    site: "/countdown-timer",
+  },
 ];

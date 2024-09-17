@@ -1,19 +1,20 @@
 import { useNavigate } from "react-router-dom"
 import "./home.css"
 import { data } from "../../utils/data"
+import Box from "../../components/HomePageBox/Box"
 
 const Home = () => {
     const navigate = useNavigate()
     return (
         <div className='home'>
             <h1>Components</h1>
-            <ul>
+            <div>
                 {
                     data?.map((item, index) => (
-                        <li key={index} onClick={() => navigate(item?.site)}>{item?.title}</li>
+                        <Box key={index} onClick={() => navigate(item?.site)} title={item?.title} />
                     ))
                 }
-            </ul>
+            </div>
         </div>
     )
 }

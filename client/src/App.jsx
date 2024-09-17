@@ -13,6 +13,7 @@ import Grid from './pages/Grid Page/Grid.jsx';
 import TicTakToe from './pages/TicTacToe/TicTakToe.jsx';
 import CurrencyConverter from './pages/Currency Converter/CurrencyConverter.jsx';
 import SelectableGrid from './pages/Selectable Grid/SelectableGrid.jsx';
+import CountdownTimer from './pages/Countdown Timer/CountdownTimer.jsx';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
           <Route path='/tic-tac-toe' element={<TicTakToe />} />
           <Route path='/currency-converter' element={<CurrencyConverter />} />
           <Route path='/selectable-grid' element={<SelectableGrid />} />
+          <Route path='/countdown-timer' element={<CountdownTimer />} />
         </Routes>
       </Router>
     </>

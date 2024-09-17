@@ -30,7 +30,7 @@ const SelectableGridComponent = ({ rows = 10, column = 10 }) => {
             const selected = [];
             for (let row = minRow; row <= maxRow; row++) {
                 for (let col = minCols; col <= maxCols; col++) {
-                    selected.push(row * column + col + 1); // Corrected calculation
+                    selected.push(row * column + col + 1); 
                 }
             }
 
