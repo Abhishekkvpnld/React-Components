@@ -1,8 +1,80 @@
-.timer-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
+.timer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: 20px;
+}
+
+input {
+  width: 65px;
+  height: 60px;
+  border: none;
+  margin: 5px;
+  font-size: 44px;
+  text-align: center;
+}
+
+input::placeholder {
+  font-size: 44px;
+  color: gray;
+}
+
+.buttons {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  animation: transform 2.5s ease;
+}
+
+.buttons button {
+  transition: transform 0.2s ease;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.start-btn {
+  width: 150px;
+  height: 35px;
+  border-radius: 8px;
+  color: white;
+  background-color: green;
+  border: none;
+}
+
+.reset-btn {
+  width: 150px;
+  height: 35px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(66, 46, 212);
+  border: none;
+}
+
+.stop-btn {
+  width: 150px;
+  height: 35px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(209, 56, 9);
+  border: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
 }
