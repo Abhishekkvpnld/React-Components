@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./countdownTimer.css";
 import { MdOutlineNotStarted } from "react-icons/md";
 import { IoStopCircleOutline } from "react-icons/io5";
@@ -11,7 +11,6 @@ const CountdownTimer = () => {
     const [seconds, setSeconds] = useState('');
 
     const [start, setStart] = useState(false);
-    const [stop, setStop] = useState(false);
     const [intervalId, setIntervalId] = useState(null);
 
     const formatTime = (time) => String(time).padStart(2, '0');
@@ -21,7 +20,6 @@ const CountdownTimer = () => {
         if (parseInt(hours) == 0 && parseInt(minutes) == 0 && parseInt(seconds) == 0) return;
 
         setStart(true);
-        setStop(false);  // Reset stop status when starting
 
         const countdownTimer = setInterval(() => {
             timer();
@@ -45,9 +43,17 @@ const CountdownTimer = () => {
             clearInterval(intervalId);
             setIntervalId(null);
         }
-        setStop(true);
         setStart(false);
     };
+
+    useEffect(() => {
+        if (seconds == 0 && minutes == 0 && hours == 0) {
+            stopInterval();
+            setHours('');
+            setMinutes('');
+            setSeconds('');
+        }
+    }, [seconds, minutes, hours]);
 
     // Timer logic
     const timer = () => {
@@ -57,15 +63,21 @@ const CountdownTimer = () => {
 
         if (h == 0 && m == 0 && s == 0) {
             stopInterval();
-        } else if (s > 0) {
+            return;
+        }
+
+        // Update seconds first
+        if (s > 0) {
             setSeconds(prev => formatTime(prev - 1));
-        } else if (s == 0 && m > 0) {
-            setMinutes(prev => formatTime(prev - 1));
-            setSeconds(59);
-        } else if (m == 0 && h > 0) {
-            setHours(prev => formatTime(prev - 1));
-            setMinutes(59);
-            setSeconds(59);
+        } else if (s === 0) {
+            if (m > 0) {
+                setMinutes(prev => formatTime(prev - 1));
+                setSeconds(59);
+            } else if (m === 0 && h > 0) {
+                setHours(prev => formatTime(prev - 1));
+                setMinutes(59);
+                setSeconds(59);
+            }
         }
     };
 
@@ -74,7 +86,6 @@ const CountdownTimer = () => {
         setHours('');
         setMinutes('');
         setSeconds('');
-        setStop(false);  // Reset stop status on reset
     };
 
     return (
@@ -135,7 +146,6 @@ const CountdownTimer = () => {
                 {start ? (
                     <>
                         <button
-                            style={{ display: stop ? "none" : "inline-block" }}
                             onClick={handlePause}
                             className="pause-btn"
                         >
@@ -143,7 +153,6 @@ const CountdownTimer = () => {
                         </button>
 
                         <button
-                            style={{ display: stop ? "none" : "inline-block" }}
                             onClick={stopInterval}
                             className="stop-btn"
                         >
