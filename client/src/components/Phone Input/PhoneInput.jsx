@@ -1,11 +1,13 @@
 import { useState } from "react";
 import "./phoneInput.css";
 import OtpInput from "../OTP Input/OtpInput";
+import toast from "react-hot-toast";
 
 const PhoneInput = () => {
 
     const [phone, setPhone] = useState('');
-    const [showOTP, setShowOTP] = useState(false);
+    const [showOTP, setShowOTP] = useState(true);
+    
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -23,8 +25,8 @@ const PhoneInput = () => {
     }
 
 
-    const otpSubmit = (e) => {
-        console.log("logged In Successfully")
+    const otpSubmit = () => {
+       toast.success("logged In Successfully")
     }
 
     return (

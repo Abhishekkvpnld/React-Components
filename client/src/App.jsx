@@ -15,6 +15,7 @@ import CurrencyConverter from './pages/Currency Converter/CurrencyConverter.jsx'
 import SelectableGrid from './pages/Selectable Grid/SelectableGrid.jsx';
 import CountdownTimer from './pages/Countdown Timer/CountdownTimer.jsx';
 import OtpGenerator from './pages/OTP Generator/OtpGenerator.jsx';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/countdown-timer' element={<CountdownTimer />} />
           <Route path='/otp-generator' element={<OtpGenerator />} />
         </Routes>
+        <Toaster position='top-right'/>
       </Router>
     </>
   )
