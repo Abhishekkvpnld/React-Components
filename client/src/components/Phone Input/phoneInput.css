@@ -1,0 +1,47 @@
+.phone-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.phone-form {
+  height: 150px;
+  width: 350px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.phone-form label {
+  font-size: large;
+  font-weight: bold;
+}
+
+.phone-form button {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(16, 178, 16);
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.phone-form button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.phone-inp {
+  width: 350px;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-align: left;
+  padding: 15px;
+  font-size: medium;
+}
+
+.phone-inp::placeholder {
+  font-size: medium;
+}

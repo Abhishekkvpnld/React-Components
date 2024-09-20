@@ -1,0 +1,16 @@
+.otp-input-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.otp-box{
+    border: 2px solid rgb(104, 103, 103);
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 2.5em;
+    border-radius: 5px;
+}

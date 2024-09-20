@@ -14,6 +14,7 @@ import TicTakToe from './pages/TicTacToe/TicTakToe.jsx';
 import CurrencyConverter from './pages/Currency Converter/CurrencyConverter.jsx';
 import SelectableGrid from './pages/Selectable Grid/SelectableGrid.jsx';
 import CountdownTimer from './pages/Countdown Timer/CountdownTimer.jsx';
+import OtpGenerator from './pages/OTP Generator/OtpGenerator.jsx';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           <Route path='/currency-converter' element={<CurrencyConverter />} />
           <Route path='/selectable-grid' element={<SelectableGrid />} />
           <Route path='/countdown-timer' element={<CountdownTimer />} />
+          <Route path='/otp-generator' element={<OtpGenerator />} />
         </Routes>
       </Router>
     </>

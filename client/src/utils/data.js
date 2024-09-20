@@ -47,4 +47,8 @@ export const data = [
     title: "Countdown Timer",
     site: "/countdown-timer",
   },
+  {
+    title: " OTP Generator",
+    site: "/otp-generator",
+  },
 ];
