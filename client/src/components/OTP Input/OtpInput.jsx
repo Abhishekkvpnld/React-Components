@@ -34,6 +34,11 @@ const OtpInput = ({ length, onSubmit }) => {
         if (value && index < length - 1 && inputRefs.current[index + 1]) {
             inputRefs.current[index + 1].focus();
         }
+
+
+        if (!otp[index] && index > 0 && otp[index + 1]) {
+            inputRefs.current[index + 2].focus();
+        }
     }
 
     const handleOnClick = (index) => {
@@ -42,6 +47,7 @@ const OtpInput = ({ length, onSubmit }) => {
         if (index > 0 && !otp[index - 1]) {
             inputRefs.current[otp.indexOf('')].focus();
         }
+
     }
 
     const handleKeyDown = (e, index) => {
@@ -49,6 +55,7 @@ const OtpInput = ({ length, onSubmit }) => {
         if (e.key === "Backspace" && !otp[index] && index > 0 && inputRefs.current[index - 1]) {
             inputRefs.current[index - 1].focus();
         }
+
     }
 
     return (
