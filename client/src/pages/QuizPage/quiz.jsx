@@ -1,5 +1,5 @@
 import "./quiz.css";
-import QuizComponent from "../../components/quizComponent/QuizComponent.jsx";
+import QuizComponent from "../../components/quizComp/QuizComponent.jsx";
 import { questions } from "../../utils/questions.js";
 import { useState } from "react";
 

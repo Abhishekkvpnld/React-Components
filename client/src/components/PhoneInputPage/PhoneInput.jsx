@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./phoneInput.css";
-import OtpInput from "../OTP Input/OtpInput";
+import OtpInput from "../OTPInputComponent/OtpInput";
 import toast from "react-hot-toast";
 
 const PhoneInput = () => {

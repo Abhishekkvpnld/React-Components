@@ -1,4 +1,4 @@
-import SelectableGridComponent from "../../components/Selectable Grid/SelectableGridComponent";
+import SelectableGridComponent from "../../components/SelectableGridComponent/SelectableGridComponent";
 import "./selectableGrid.css";
 
 const SelectableGrid = () => {

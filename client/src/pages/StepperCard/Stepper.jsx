@@ -1,4 +1,4 @@
-// import CheckoutStepper from "../../components/CheckoutStepper/CheckoutStepper"
+import CheckoutStepper from "../../components/CheckoutStepper/CheckoutStepper"
 import "./stepper.css"
 
 const stepper = () => {

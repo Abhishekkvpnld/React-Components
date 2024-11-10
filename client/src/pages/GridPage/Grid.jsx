@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Cell from "../../components/Cell/Cell";
+import Cell from "../../components/CellComponent/Cell";
 import "./grid.css";
 
 const Grid = () => {

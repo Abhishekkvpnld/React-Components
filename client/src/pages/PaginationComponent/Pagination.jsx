@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./pagination.css";
-import ProductCard from "../../components/ProductCard/ProductCard";
+import ProductCard from "../../components/ProductCardPage/ProductCard";
 import { IoMdArrowDroprightCircle } from "react-icons/io";
 import { IoMdArrowDropleftCircle } from "react-icons/io";
 

@@ -2,19 +2,19 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import DragAndDrop from './pages/DragNDrop/DragAndDrop.jsx';
-import Stepper from "./pages/stepper/Stepper.jsx"
+import Stepper from "./pages/StepperCard/Stepper.jsx"
 import Home from "./pages/HomeList/Home.jsx"
-import Quiz from "./pages/Quiz/Quiz.jsx"
-import DarkMode from "./pages/DarkMode/DarkMode.jsx"
-import Pagination from "./pages/Pagination/Pagination.jsx"
-import Poll from "./pages/Poll/Poll.jsx"
-import ProgressBar from "./pages/ProgressBar/ProgressBar.jsx"
+import Quiz from "./pages/QuizPage/Quiz.jsx"
+import DarkMode from "./pages/DarkModePage/DarkMode.jsx"
+import Pagination from "./pages/PaginationComponent/Pagination.jsx"
+import Poll from "./pages/PollPage/Poll.jsx"
+import ProgressBar from "./pages/ProgressBarPage/ProgressBar.jsx"
 import Grid from "./pages/GridPage/Grid.jsx"
-import TicTakToe from "./pages/TicTacToe/TicTakToe.jsx"
+import TicTakToe from "./pages/TicTacToeApp/TicTakToe.jsx"
 import CurrencyConverter from "./pages/CurrencyConverter/CurrencyConverter.jsx"
-import SelectableGrid from "./pages/SelectableGrid/SelectableGrid.jsx"
-import CountdownTimer from "./pages/CountdownTimer/CountdownTimer.jsx"
-import OtpGenerator from "./pages/OTPGenerator/OtpGenerator.jsx"
+import SelectableGrid from "./pages/SelectableGridPage/SelectableGrid.jsx"
+import CountdownTimer from "./pages/CountdownTimerPage/CountdownTimer.jsx"
+import OtpGenerator from "./pages/OTPGeneratorPage/OtpGenerator.jsx"
 
 import { Toaster } from 'react-hot-toast';
 

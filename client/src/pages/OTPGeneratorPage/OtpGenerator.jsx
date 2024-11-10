@@ -1,4 +1,4 @@
-import PhoneInput from "../../components/Phone Input/PhoneInput";
+import PhoneInput from "../../components/PhoneInputPage/PhoneInput";
 import "./otpGenerator.css";
 
 
