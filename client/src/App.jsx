@@ -1,20 +1,21 @@
 
 import './App.css';
-import DragAndDrop from './pages/Drag-n-Drop/dragAndDrop';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Stepper from './pages/stepper/Stepper.jsx';
-import Quiz from './pages/quiz/quiz.jsx';
-import Home from './pages/Home List/Home.jsx';
-import DarkMode from './pages/Dark Mode/DarkMode.jsx';
-import Pagination from './pages/Pagination/Pagination.jsx';
-import Poll from './pages/Poll/Poll.jsx';
-import ProgressBar from './pages/ProgressBar/ProgressBar.jsx';
-import Grid from './pages/Grid Page/Grid.jsx';
-import TicTakToe from './pages/TicTacToe/TicTakToe.jsx';
-import CurrencyConverter from './pages/Currency Converter/CurrencyConverter.jsx';
-import SelectableGrid from './pages/Selectable Grid/SelectableGrid.jsx';
-import CountdownTimer from './pages/Countdown Timer/CountdownTimer.jsx';
-import OtpGenerator from './pages/OTP Generator/OtpGenerator.jsx';
+import DragAndDrop from './pages/DragNDrop/DragAndDrop.jsx';
+import Stepper from "./pages/stepper/Stepper.jsx"
+import Home from "./pages/HomeList/Home.jsx"
+import Quiz from "./pages/Quiz/Quiz.jsx"
+import DarkMode from "./pages/DarkMode/DarkMode.jsx"
+import Pagination from "./pages/Pagination/Pagination.jsx"
+import Poll from "./pages/Poll/Poll.jsx"
+import ProgressBar from "./pages/ProgressBar/ProgressBar.jsx"
+import Grid from "./pages/GridPage/Grid.jsx"
+import TicTakToe from "./pages/TicTacToe/TicTakToe.jsx"
+import CurrencyConverter from "./pages/CurrencyConverter/CurrencyConverter.jsx"
+import SelectableGrid from "./pages/SelectableGrid/SelectableGrid.jsx"
+import CountdownTimer from "./pages/CountdownTimer/CountdownTimer.jsx"
+import OtpGenerator from "./pages/OTPGenerator/OtpGenerator.jsx"
+
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
           <Route path='/countdown-timer' element={<CountdownTimer />} />
           <Route path='/otp-generator' element={<OtpGenerator />} />
         </Routes>
-        <Toaster position='top-right'/>
+        <Toaster position='top-right' />
       </Router>
     </>
   )
