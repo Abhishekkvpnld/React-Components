@@ -1,4 +1,4 @@
-import CheckoutStepper from "../../components/CheckoutStepper/CheckoutStepper"
+// import CheckoutStepper from "../../components/CheckoutStepper/CheckoutStepper"
 import "./stepper.css"
 
 const stepper = () => {
@@ -26,7 +26,7 @@ const stepper = () => {
   return (
     <div className="stepper-div">
       <h2>Checkout</h2>
-      <CheckoutStepper stepsConfig={checkout_steps}/>
+      {/* <CheckoutStepper stepsConfig={checkout_steps}/> */}
     </div>
   )
 }

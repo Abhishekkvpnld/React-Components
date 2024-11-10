@@ -18,7 +18,7 @@ const CheckoutStepper = ({ stepsConfig = [] }) => {
             marginLeft: stepRef.current[0].offsetWidth / 2,
             marginRight: stepRef.current[stepsConfig.length - 1].offsetWidth / 2
         })
-    }, [stepRef]);
+    }, [stepRef,stepsConfig.length]);
 
     const handleNext = () => {
         setCurrentStep((prev) => {
@@ -70,7 +70,7 @@ const CheckoutStepper = ({ stepsConfig = [] }) => {
                         marginRight: margin.marginRight
                     }}
                 >
-                    <div className="progress" style={{ width: `${calculateProgressBar()}%` }}></div>
+                    <div className="progress" style={{ width: `${calculateProgressBar()}%`,height:"4px",backgroundColor:"green" }}></div>
                 </div>
             </div>
 
