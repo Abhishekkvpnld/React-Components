@@ -1,10 +1,10 @@
 import "./quiz.css";
-import QuizComponent from "../../components/quizComp/QuizComponent.jsx";
-import { questions } from "../../utils/questions.js";
+import QuizComponent from "../../components/QuizComp/QuizComponent";
+import { questions } from "../../utils/questions";
 import { useState } from "react";
 
 
-const Quiz = () => {
+const QuizApp = () => {
 
     const [currentQuestion, setCorrentQuestion] = useState(0);
     const [userAnswer, setUserAnswer] = useState([]);
@@ -63,4 +63,4 @@ const Quiz = () => {
     )
 }
 
-export default Quiz;
+export default QuizApp;
