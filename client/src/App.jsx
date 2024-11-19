@@ -17,6 +17,7 @@ import CountdownTimer from "./pages/CountdownTimerPage/CountdownTimer"
 import OtpGenerator from "./pages/OTPGeneratorPage/OtpGenerator"
 
 import { Toaster } from 'react-hot-toast';
+import BreadCrumpsPage from './pages/BreadCrumps/BreadCrumpsPage';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
           <Route path='/selectable-grid' element={<SelectableGrid />} />
           <Route path='/countdown-timer' element={<CountdownTimer />} />
           <Route path='/otp-generator' element={<OtpGenerator />} />
+          <Route path='/breadcrumps' element={<BreadCrumpsPage/>}/>
         </Routes>
         <Toaster position='top-right' />
       </Router>

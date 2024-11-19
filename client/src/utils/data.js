@@ -51,4 +51,8 @@ export const data = [
     title: " OTP Generator",
     site: "/otp-generator",
   },
+  {
+    title: " BreadCrumps",
+    site: "/breadcrumps",
+  },
 ];
