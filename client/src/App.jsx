@@ -18,6 +18,8 @@ import OtpGenerator from "./pages/OTPGeneratorPage/OtpGenerator"
 
 import { Toaster } from 'react-hot-toast';
 import BreadCrumpsPage from './pages/BreadCrumps/BreadCrumpsPage';
+import BreadCrumpsProducts from './pages/BreadCrumps/BreadCrumpsProducts';
+import BreadCrumpsProductDetails from './pages/BreadCrumps/BreadCrumpsProductDetails';
 
 function App() {
 
@@ -41,6 +43,8 @@ function App() {
           <Route path='/countdown-timer' element={<CountdownTimer />} />
           <Route path='/otp-generator' element={<OtpGenerator />} />
           <Route path='/breadcrumps' element={<BreadCrumpsPage/>}/>
+          <Route path='/breadcrumps/products' element={<BreadCrumpsProducts/>}/>
+          {/* <Route path='/breadcrumps/products/:id' element={<BreadCrumpsProductDetails/>}/> */}
         </Routes>
         <Toaster position='top-right' />
       </Router>
