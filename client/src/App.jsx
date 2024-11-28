@@ -20,6 +20,7 @@ import { Toaster } from 'react-hot-toast';
 import BreadCrumpsPage from './pages/BreadCrumps/BreadCrumpsPage';
 import BreadCrumpsProducts from './pages/BreadCrumps/BreadCrumpsProducts';
 import BreadCrumpsProductDetails from './pages/BreadCrumps/BreadCrumpsProductDetails';
+import BreadCrump from './components/BreadCrumps/BreadCrump';
 
 function App() {
 
@@ -27,11 +28,14 @@ function App() {
   return (
     <>
       <Router>
+
+        <BreadCrump />
+
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/stepper' element={<Stepper />} />
           <Route path='/dragNdrop' element={<DragAndDrop />} />
-          <Route path='/quiz' element={<Quiz/>} />
+          <Route path='/quiz' element={<Quiz />} />
           <Route path='/darkMode' element={<DarkMode />} />
           <Route path='/pagination' element={<Pagination />} />
           <Route path='/poll' element={<Poll />} />
@@ -42,9 +46,9 @@ function App() {
           <Route path='/selectable-grid' element={<SelectableGrid />} />
           <Route path='/countdown-timer' element={<CountdownTimer />} />
           <Route path='/otp-generator' element={<OtpGenerator />} />
-          <Route path='/breadcrumps' element={<BreadCrumpsPage/>}/>
-          <Route path='/breadcrumps/products' element={<BreadCrumpsProducts/>}/>
-          {/* <Route path='/breadcrumps/products/:id' element={<BreadCrumpsProductDetails/>}/> */}
+          <Route path='/breadcrumps' element={<BreadCrumpsPage />} />
+          <Route path='/breadcrumps/products' element={<BreadCrumpsProducts />} />
+          <Route path='/breadcrumps/products/:id' element={<BreadCrumpsProductDetails />} />
         </Routes>
         <Toaster position='top-right' />
       </Router>
